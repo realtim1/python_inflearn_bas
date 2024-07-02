@@ -58,6 +58,38 @@ print('%.5s' % ('nice')) #nice
 print('%.5s' % ('python study'))#pytho
 
 
+print('{:10.5}'.format('pythonstudy'))# 총 10글자를 확보했는데 5글자만 나와라, 공간은 10개
+
+
+# %d
+print('%d %d' % (1,2))
+print('{} {}'.format(1,2))
+
+print('%4d' % (42))
+
+print('{:4d}'.format(42))
+
+
+# %f
+print('%.18f' % (3.14123213213123))
+print('{:f}'.format(3.14123213213123))
+
+print('%06.2f' % (3.141592123456789))#003.14
+
+print('{:06.2f}'.format(3.141592123456789)) #003.14
+
+print()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
