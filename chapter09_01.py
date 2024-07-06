@@ -8,16 +8,23 @@
 # 예제1
 
 f = open('./resource/it_news.txt', 'r', encoding='UTF-8')
+
+
 # 속성 확인
 print(dir(f))
+
 # 인코딩 확인
 print(f.encoding)
+
 # 파일 이름
 print(f.name)
+
 # 모드 확인
 print(f.mode)
+
 cts = f.read()
 print(cts)
+
 # 반드시 close
 f.close()
 
@@ -80,7 +87,7 @@ with open('./resource/contents1.txt', 'w') as f:
 with open('./resource/contents1.txt', 'a') as f:
     f.write('I love python2\n')
     
-    
+"""    
 # 예제3
 # writelines : 리스트 -> 파일
 with open('./resource/contents2.txt', 'w') as f:
@@ -92,3 +99,5 @@ with open('./resource/contents3.txt', 'w') as f:
     print('Test Text Write!', file=f)
     print('Test Text Write!', file=f)
     print('Test Text Write!', file=f)
+
+"""

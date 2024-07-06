@@ -9,6 +9,7 @@ import sys
 # 예제1
 print(sys.argv)
 
+
 # 예제2(강제 종료)
 # sys.exit() 
 
@@ -25,11 +26,14 @@ obj = {1: 'python', 2: 'study', 3: 'basic'}
 pickle.dump(obj, f)
 f.close()
 
+
+
 # 예제5(읽기)
 f = open("test.obj", 'rb')
 data = pickle.load(f)
 print(data)
 f.close()
+
 
 
 # os : 환경 변수, 디렉토리(파일) 처리 관련, 운영체제 작업 관련
@@ -38,7 +42,9 @@ import os
 
 # 예제6
 print(os.environ)
-print(os.environ['USERNAME'])
+
+print(os.environ['USER'])
+
 
 # 예제7(현재 경로)
 print(os.getcwd())
@@ -50,26 +56,30 @@ import time
 # 예제8
 print(time.time())
 
+
 # 예제9(형태 변환)
 print(time.localtime(time.time()))
+
 
 # 예제10(간단 표현)
 print(time.ctime())
 
+
 # 예제11(형식 표현)
 print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 
+
 # 예제12(시간 간격 발생)
-for i in range(5):
-	print(i)
-	time.sleep(1)
+#for i in range(5):
+#	print(i)
+#	time.sleep(1)
 
 
 # random : 난수 리턴
 import random
 
 # 예제13
-print(random.random())
+print(random.random()) # 0 ~ 1 사이 실수가 나옴
 
 # 예제14
 print(random.randint(1, 45))
@@ -90,6 +100,7 @@ import webbrowser
 
 # 예제17
 webbrowser.open("http://google.com")
+
 
 # 예제18(새창 실행)
 webbrowser.open_new("http://google.com")

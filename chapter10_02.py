@@ -10,6 +10,9 @@ import random
 import csv
 # 사운드 처리
 import winsound
+# mac 에서는 winsound가 안됌 playsound 사용해야함
+# pip install playsound==1.2.2  버전 낮은걸로....
+
 #처음 인사
 name = input("What is your name? ")
 

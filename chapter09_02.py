@@ -13,8 +13,11 @@ with open('./resource/test1.csv', 'r') as f:
     print(reader)
     # 타입 확인
     print(type(reader))
+
+    
     # 속성 확인
     print(dir(reader))  # __iter__
+    
     print()
 
     for c in reader:
